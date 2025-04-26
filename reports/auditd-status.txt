@@ -1,0 +1,11 @@
+● auditd.service - Security Auditing Service
+     Loaded: loaded (/usr/lib/systemd/system/auditd.service; enabled; vendor preset: enabled)
+     Active: active (running) since ...
+TriggeredBy: ● auditd.socket
+       Docs: man:auditd(8)
+             https://github.com/linux-audit/audit-documentation
+ Main PID: 495 (auditd)
+      Tasks: 3 (limit: 2345)
+     Memory: 1.5M
+     CGroup: /system.slice/auditd.service
+             └─495 /sbin/auditd

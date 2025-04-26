@@ -1,0 +1,68 @@
+# 🔧 Secure CentOS Server Hardening Checklist (CIS-Compliant)
+
+---
+
+hardening_steps:
+  - title: Full Disk Encryption
+    description: Enable LUKS encryption during OS installation to protect data at rest.
+    status: completed
+
+  - title: Partition Setup
+    description: Separate /boot and LUKS-encrypted logical volumes for / and swap.
+    status: completed
+
+  - title: Create Limited Admin User
+    description: Create 'devops_admin' user with sudo privileges instead of enabling root login.
+    status: completed
+
+  - title: Disable Root SSH Login
+    description: Prevent root from logging in remotely over SSH.
+    status: completed
+
+  - title: Configure UFW Firewall
+    description: Set default deny policy and allow SSH traffic only.
+    status: completed
+
+  - title: Install and Configure Fail2Ban
+    description: Protect SSH service from brute-force login attempts.
+    status: completed
+
+  - title: Enforce Password Complexity
+    description: Require strong passwords using PAM module adjustments.
+    status: completed
+
+  - title: Lockout After Failed Login Attempts
+    description: Configure account lockouts using faillock and PAM.
+    status: completed
+
+  - title: Enable AuditD
+    description: Install and configure AuditD to monitor sensitive file accesses.
+    status: completed
+
+  - title: Enable SELinux
+    description: Set SELinux to Enforcing mode for mandatory access control.
+    status: completed
+
+  - title: Enable Automatic Security Updates
+    description: Configure dnf-automatic to apply security updates automatically.
+    status: completed
+
+  - title: Remove Unnecessary Services
+    description: Ensure telnet and FTP packages are not installed.
+    status: completed
+
+  - title: Create Automated Patching Script
+    description: Build patch_system.sh script to automate and log patching.
+    status: completed
+
+notes:
+  - All hardening steps are fully implemented according to CIS baselines.
+  - Each change is documented via screenshots and professional reporting.
+  - Aggressive lockout policies demonstrated real-world consequences.
+
+---
+
+# 📈 Checklist Status: 100% Completed
+
+This YAML file was created as part of the Secure CentOS Server Deployment project to document hardening operations in a structured and auditable format.
+
